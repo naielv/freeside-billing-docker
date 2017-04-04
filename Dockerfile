@@ -6,7 +6,7 @@ RUN echo "deb http://freeside.biz/~jeremyd/freeside4-jessie-stable/ ./" >> /etc/
 
 RUN apt-get update
 
-RUN apt-get -y ssmtp
+RUN apt-get -y install ssmtp
 
 RUN apt-get -y install freeside freeside-lib freeside-webui
 RUN apt-mark hold freeside*
