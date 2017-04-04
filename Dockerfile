@@ -1,4 +1,5 @@
-USE debian:jessie
+FROM debian:jessie
+MAINTAINER DACRepair
 
 RUN echo "deb http://freeside.biz/~ivan/freeside-jessie/ ./" >> /etc/apt/sources.list
 RUN echo "deb http://freeside.biz/~jeremyd/freeside4-jessie-stable/ ./" >> /etc/apt/sources.list
